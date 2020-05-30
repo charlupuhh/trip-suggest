@@ -1,0 +1,191 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-family: Roboto;
+}
+
+
+/* Header Styling */
+header{
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+header .header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+header .menu{
+    display: flex;
+}
+
+header .menu .homepage-btn{
+    background-color: #BCB500;
+    color: white;
+    padding: 10%;
+    border-radius: 10px;
+    height: 5%;
+    font-weight: bold;
+}
+
+header .menu .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header .menu .dropdown .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Banner Styling */
+.page-top{
+    border-top: solid #BCB500 10px;
+    border-bottom: solid #BCB500 10px;
+}
+
+.page-top .banner-container{
+    padding: 2% 20%;
+}
+
+.page-top .banner-container h2{
+    font-size: 1.2rem;
+    margin-top: 1%;
+    color: #6F6F6F;
+}
+
+.page-top .banner-container .banner-caption{
+    font-size: 3rem;
+}
+
+/* Main Content Styling */
+/* .map-section{background:transparent url(../_img/map-top.png) center 0 no-repeat;padding-top:220px;margin-top:40px;} */
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 20%;
+    background: transparent;
+    background-color: #F0F0ED;
+}
+
+.main-content .geo_places{
+    list-style: none;
+    line-height: 2rem;
+}
+
+.main-content h2{
+    font-size: 3rem;
+}
+
+.main-content .geo_places img{
+    width: 2rem;
+    height: auto;
+}
+
+.main-content a{
+    color: #BCB500;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+.main-content .hint a{
+    color: #6F6F6F;
+    font-size: 1rem;
+    font-style: italic;
+    margin-left: 0;
+}
+
+/* Footer Styling */
+
+.footer-ribbon span{
+    background-color: #BCB500;
+}
+
+.footer-suggestions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #0E0E0E;
+    color: white;
+    padding: 2% 20%;
+}
+
+.footer-suggestions h4{
+    color: white;
+    font-size: 1.8em;
+    font-weight: 200;
+}
+
+.footer-suggestions .advert-title-l, .footer-suggestions .quote p{
+    color: #777777;
+}
+
+.footer-suggestions .footer-recommendations ul{
+    list-style: none;
+    margin-left: none;
+}
+
+.footer-suggestions .footer-recommendations ul li a{
+    color: white;
+}
+
+/* Copyright Styling */
+.copyright{
+    display: flex;
+    background-color: #060606;
+    justify-content: space-between;
+    padding: 2% 20%;
+}
+
+.copyright .copy-logo{
+    display: flex;
+    flex-direction: row;
+    color: #777777;
+    font-size: 20px;
+}
+
+.copyright .copy-logo i{
+    font-size: 50px;
+    margin-right: 30px;
+}
+
+.copyright a{
+    color: white;
+}
+
+/* Tablet Styling */
+@media(max-width: 800px){
+    .footer-suggestions{
+        flex-direction: column;
+    }
+}
+
+/* Mobile Styling */
+@media(max-width: 500px){
+
+}
