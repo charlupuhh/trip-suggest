@@ -30,97 +30,6 @@ time, mark, audio, video {
     font-family: 'Open Sans';
 }
 
-/* Header Styling */
-header{
-    position: fixed;
-    top: 0;
-    background-color: white;
-    width: 100%;
-    padding-bottom: 2%;
-}
-header .header-container{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20%;
-}
-
-header .menu{
-    display: flex;
-    margin-top: 5%;
-}
-
-header .menu .homepage-btn{
-    background-color: #BCB500;
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 10px;
-    width: 100px;
-    padding: 6%;
-}
-
-header .menu .dropdown {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 5px;
-    height: 30px;
-    width:200px;
-}
-
-header .menu .dropdown .dropdown-toggle{
-    color: #BCB500;
-    font-weight: bold;
-    padding: 10% 6%;
-    border-radius: 10px;
-}
-
-header .menu .dropdown .dropdown-toggle:hover{
-    background-color: #BCB500;
-    color: white;
-}
-
-header .menu .dropdown .dropdown-content{
-    display: none;
-    position: absolute;
-    right: 0em;
-    top: 105%;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Dropdown Menu Styling */
-header .menu .dropdown:hover .dropdown-content {
-    display: flex;
-    border-radius: 10px;
-    border-top: solid #BCB500 6px;
-    background-color: white;
-    padding: 10%;
-    line-height: 2rem;
-}
-
-header .menu .dropdown:hover .dropdown-content h2{
-    width: 500px;
-    color: #6F6F6F;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-
-}
-
-header .menu .dropdown:hover .dropdown-content ul{
-    list-style: none;
-}
-
-header .menu .dropdown:hover .dropdown-content ul li a{
-    color: #6F6F6F;
-    font-size: 1.2rem;
-}
-
-header .menu .dropdown:hover .dropdown-content ul li a .country_hint{
-    font-style: italic;
-    font-size: 0.9rem;
-}
 /* Banner Styling */
 .page-top{
     margin-top: 200px;
@@ -216,7 +125,7 @@ header .menu .dropdown:hover .dropdown-content ul li a .country_hint{
 
 .footer-suggestions .footer-recommendations ul li a{
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 /* Copyright Styling */
@@ -264,7 +173,7 @@ header .menu .dropdown:hover .dropdown-content ul li a .country_hint{
 
     .page-top{
         width: auto;
-        margin-top: 20px;
+        margin-top: 20%;
     }
 
     .page-top .banner-container{

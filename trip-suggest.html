@@ -22,53 +22,84 @@
         enable_page_level_ads: true
         });
         </script>
+    <!-- Navigation Import-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
 </head>
 
 <body>
-        <header>
-            <div class="header-container">    
-                <a href = "trip-suggest.html"><img class = 'logo' src='logo.png'></a>
-                <div class="menu">
-                    <a class="homepage-btn" href= "trip-suggest.html">HOMEPAGE</a>
-                    <div class="dropdown">
-                        <a class="dropdown-toggle" href="#">
-                            PLACE DIRECTORY
-                            <i class="fa fa-angle-down"></i>
-                        </a>
-                        <div class="dropdown-content">
-                            <div>
-                                <h2>Currently Hot Locations</h2>
-                                <ul class="sub-menu">
-                                    <li><a href="http://trip-suggest.com/sri-lanka/western/colombo/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAB3klEQVR4Xn2Sv2pUXRTF197nnHsnM04SLSSgIkH9EiIogogJWNgI8mFl5xPYWFj4BuI72PsEAUsRGwk2igmJEAgTIaAxg/kzN5N77zl7OY5oGscfv2IXe7NWsaW7NbWyP0GR6XR4xg4pwknWG6p9FQcQFAp+IQABMAo9OR3lzdrs/aVblZenvbVHxXqdebtR7W5CXrR0NaTcssqxhjjQExEwifNHdrNqzZhXYe6SqHhHOAxUhb5qpH1Jc1XMDTu+vlrW24L/Yqh1bLGVCvFvc7ncVwAy9BgPv5JlHS/nUj0d07Nde9wrHvR6FfeZurd7YSOEDxkCPf5KRjh4j3IXxRZlzNL7xsRqbgk4nUTBnCAUoxCUJ1L7c5ZvexCtKzb+f33qYdmcMx79qTgCFfkS49hCvHjPLAR3iaFRQvkdIdrvndHBkI5zd8u6ZXTYW9KddxoJbjpJ8s/kSszYbmr2vL133vxctCcTcqf8akXoiktAKZDhMYceExGvlWndj39suAPXX+gnsBW1X7FY1saBhOuVbzNUokYpkxsYkyJhIA02X6pH1vUQ2jcNi01ktI4LL5v+dcMr0mzNBNnZmlreO2mCC6k4O3xPTLL65PRIEABCa6GS/ucAAx1IUsGZ+gfyOfgU/i/MDQAAAABJRU5ErkJggg==" height="12px" width="20px" title="Sri Lanka" alt="Sri Lanka Flag Icon" class="flag_icon">Colombo <span class="country_hint">(Sri Lanka)</span></a></li>
-                                    <li><a href="http://trip-suggest.com/india/maharashtra/mumbai/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAA0ElEQVR4XsVSO47CQAydn6LsSptV2JT0W27BIbgBR+A+VJSIggsgQUGPOAIFgoaISBAhCPlNMox3qPFQQMErbMl+z3qyTatekzwLRl6AIFrZepTeIsAD8UcDbwheSmWkriuU0vh0ncdIlbPl5hjtUyAQ+J9/vwFcMQOAIT6X4/l2NFsPpqvJItwdMpSGL8z4dCiURVVk0mGkttgWaZXfVz2Pet9EAgPNhFMHPxyl0fawi0/l7HSRGsD/cjWYjHGiNLb+ADUgYZJYb9nqd97zYf9nXX9CYlAoEgAAAABJRU5ErkJggg==" height="12px" width="20px" title="India" alt="India Flag Icon" class="flag_icon">Mumbai <span class="country_hint">(India)</span></a></li>
-                                    <li><a href="http://trip-suggest.com/china/shanghai-shi/shanghai/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAAv0lEQVR4Xt3NsS5DYRzG4ef/tXUaTSUUEZHQRWIwsnApVncgcUEGd2CxWw02+xFNupw04rRpz2cxO539pnd58kZ1YpA0mSU9MuNNZa1udPxdEixokottM1YMe3Y2DDuaVrzkfOj2OO5P3Rw66nupDLr2i3Ys+PiOq5HLvTjb8lnrM52bLqRWnJitPE/y3au3Sk0RDvp213lGR34sPZT5aaLgeqSsvX/ptuCoxgahyQSZ+B3tkWQQILCuRNLSP8Q/UX44f/iboIkAAAAASUVORK5CYII=" height="12px" width="20px" title="China" alt="China Flag Icon" class="flag_icon">Shanghai <span class="country_hint">(China)</span></a></li>
-                                    <li><a href="http://trip-suggest.com/tunisia/tunis/tunis/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAABFUlEQVR4Xp2SsSuEYRzHP7/neXXeN1kM6FIXtkspi80kmcg/YLqwK6XMMlFSl0sdiwyETRZhcN1gtJDBcCiKxb137/M86sZzd+/l03f91Gf4SmWQfyBQcSia4SCqzdGEhrJACFUlyST9fYRQAWlT/kHSI97Jld6/8I5uvfyppAYptyNH0Nuj987d/Z092EGUTM7o7DHdASZWLqOmZnkvmd1tlVm22XV7mJP0qBqfIGwnW3tYJyI4eCvx9QmgNS5WTmAvzxhIqfmMzW+ptU21uOIeH2zhmgR1eNTRAS+vZmFOb+TE75IgcMUbs7rExzedsTLg44qFaHpMhoeIIvf0jDH4/M1u/jALVZBaizR+mNfqPgla8wtrhltODuQ8bQAAAABJRU5ErkJggg==" height="12px" width="20px" title="Tunisia" alt="Tunisia Flag Icon" class="flag_icon">Tunis <span class="country_hint">(Tunisia)</span></a></li>
-                                    <li><a href="http://trip-suggest.com/spain/andalusia/seville/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAAV0lEQVR4Xp3PsRGEMBQD0f13IiG5DqiBoqiK/iiBxMbW1YBerplVtf3HewXNFp2QERuhiepUkl1Ut1hJFHTESMeDDznEN82eiJv8s4+HiKfFRciIJR//ATuiGEftEzAzAAAAAElFTkSuQmCC" height="12px" width="20px" title="Spain" alt="Spain Flag Icon" class="flag_icon">Seville <span class="country_hint">(Spain)</span></a></li>
-                                    <li><a href="http://trip-suggest.com/united-kingdom/england/london/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAACv0lEQVR4Xk1Pe0hTbRw+5z1nV3VpmWWZuaI28xJig/gMJIkZbkiEZELZH94oNWtgl7Gylc4aWVheKFYfn2GRF2xgMs3pMDZszjAsnaOyTe2zMNvWXNvZ2d7O0sKHh/d9fpcHnh9ClBeS5slvnoBE3raOV8aKLV4fXx6aIOmuqvfs3kYI+C2XGtm8ikh+GSuuJFIgPVPWMFNSsnToINTrwEjIVvRKZXjTjTpptkYtO5Ce4HT9JAgSWQUvQS5BTJiRrE7H6772xOzmszvU/XgMyNK4pJvE1ncfvMeP7Pn8Rt1yukl5InpDuNdLrjh9/lhudHPOjieIfq9nFtTcms4pPilrFx9WIKniWp5QkX2mdehhh7u0wNNYDyGcdRIf29V23hZH0nbL8/5P/7XCikLfCw010o7NCvMbePvlqSIF+sM0igaD+SCDtYaJBb7MAw4HDw0hTUaH/DJCwyOqr4ON0SQ7DA0LC7jddscSjgE6DfeRPtSetH05HoRIgBIAIP5AsACUxoKDQABBUaqzLACgCoSiD0IAcPwPsZUlGo4wGStOClSTAoYhDCb1Umt/LcgXg5GibVBv0+l95knS+okwDsPBF75HDxZ2blmI5/q7u+B7MzFsIPr7CMuU1WCa0em/GoxzQwaEmyaLSqlMz72tGbUFICQ7n8LCvLcNKsvjTnt8rCNxm6VHO+8ioX3Bff6sS1LapVL/k38vSnCRmybF3XZnaZHwVFFm5NRrWHTBgdL/XbvvZvv/jWlOER0HdLpON16r0MklomPVSvRZm6jtfnJcYvPmXaqecVzXe5UfgSJ3qwmTUcvdp7CyX2knqHsYNM7yyUwGzTa3WFSh6lSPVMlyUzKz4pQ1yukucW4G4I8NuPNyJmzfCzgHj/bax0amwhmARsOQVWDQcU4oq29wPDP7WuWdgcULtf7ycwLzy1/bOj8NxfxwpgAAAABJRU5ErkJggg==" height="12px" width="20px" title="United Kingdom" alt="United Kingdom Flag Icon" class="flag_icon">London <span class="country_hint">(United Kingdom)</span></a></li>	
-                                </ul>
-                            </div>
-                            <div>
-                                <h2>Popular Countries</h2>
-                                <ul class="sub-menu">
-                                    <li><a href="http://trip-suggest.com/argentina/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAArUlEQVR4XqWSMQrCQBBFZ9bNkBAVPIy9N/E0gmcRe7EVWy+gjaWChQHdJDPZjILtrpDk8cv/YT5/8Hi5J0SqCl1ARBExMACrCj91RRUMWYwpJZtS8seArqyIKFjLvQrVNp/MgoeJCDDXGoLrar9d7zYrrp2GEGEDkbbeS/l+Vq5oRCKlwbYQjqfZeL5YqrZZPg0aWgA8XR8U2XlkEwD0Dcd2xsP51v9JDGJ/wQA+iAaC4ZxPJ2MAAAAASUVORK5CYII=" height="12px" width="20px" title="Argentina" alt="Argentina Flag Icon" class="flag_icon">Argentina <span class="country_hint">(South America)</span></a> </li>			<li><a href="http://trip-suggest.com/dominican-republic/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAA1ElEQVR4Xs2Sv2rCQACHf3fp2cs/RAJd4uQLODrqGwRXX0Chi6NDXHwFp5aC4KI4O2UunUun4gvoamk0msv5LzjdbVn8ph/f8cHBHam1p1CI92nQrL0NWgCysCsXH7BdKFAUoFD8lAqp2ovMsrsXAqlEetTE1RdbtbtEeGWeb1LxiO/DcjRxNA5UewKYQfNN+yP6GoIQqJwKQMSwB5VDQuoN2rkezaLV18+GlwzNteX8HSqxpH9b3OLP7/Vk+etaTBNrXx/kH9zMJ382XJs5JnukT3IGUPpz91GMP4kAAAAASUVORK5CYII=" height="12px" width="20px" title="Dominican Republic" alt="Dominican Republic Flag Icon" class="flag_icon">Dominican Republic <span class="country_hint">(North America)</span></a> </li>			<li><a href="http://trip-suggest.com/ecuador/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAABAUlEQVR4Xp2RQUsCQRTH37zZlqTCNkwLD3UIT2JCBnqOztpX6CN57t5JunQM9hgRSR/AYJUw1tpVFsS2mZ0XexKaMVjf6b3/n9//vWGY8Hdh3cJ/PMYyw0tSKUAOiNnglBm/qec78XgrBv2EreAtjkrbScAwJKdPe3GkzmFWwQiYJGJ/4WiR0yO5RcP3bdet+nFp/+DhrLaQwjY8rXXd1VUJ/Ork6fXlaypzl43N3qiJCRnO9oKirn4L2z/K18uBnM8/oTD4OLS5NGyudm50NSF0dqJ20WUk7sOLydSxUBlgr3FsUAGE4lai0obzDZRk/E463VpOupsG0Ur7p56HdesXz+Ja8hfy6PYAAAAASUVORK5CYII=" height="12px" width="20px" title="Ecuador" alt="Ecuador Flag Icon" class="flag_icon">Ecuador <span class="country_hint">(South America)</span></a> </li>			<li><a href="http://trip-suggest.com/spain/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAAV0lEQVR4Xp3PsRGEMBQD0f13IiG5DqiBoqiK/iiBxMbW1YBerplVtf3HewXNFp2QERuhiepUkl1Ut1hJFHTESMeDDznEN82eiJv8s4+HiKfFRciIJR//ATuiGEftEzAzAAAAAElFTkSuQmCC" height="12px" width="20px" title="Spain" alt="Spain Flag Icon" class="flag_icon">Spain <span class="country_hint">(Europe)</span></a> </li>			<li><a href="http://trip-suggest.com/iceland/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAA/ElEQVR4Xs3SIUtDURjH4f85595z2cbG6rQtiUHMgmFBGBicCFbLwrIWBYtZxGLVMBA/gSBjw7axsLQZFIMDMQiGqWd33HvOXpOHWzxLwv7tFx7e8rLidh2/+1TxUW19v3mAx/7tcaN61kn7DH+PY9b+C3sq1Da+wziKDRgApg2psSbJXLiyuWJjHJnlpQJaBma6uJDf2VoNODkwo8O9RIGIm/s7fI14ucIDCXJhD2/DJIYGJiGMxusQqRmYnVwPbEzi6cZasXS6i6fBw2XvpvMuufPyRb1rY6SibMovSQFPPL98nF+1M5K7cDbt2yBC4AsQAPIEz2XkvD7JDxGkV3gp3T1TAAAAAElFTkSuQmCC" height="12px" width="20px" title="Iceland" alt="Iceland Flag Icon" class="flag_icon">Iceland <span class="country_hint">(Europe)</span></a> </li>			<li><a href="http://trip-suggest.com/italy/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAAQ0lEQVR4Xu3LoQ0AIRAF0Q+aTrYGGiAYWqAJPAVsC9AkiEu4YFmJQe3ISZ7xTDia3wiUamTIVsl/b3BiWtz1ECtWvAH9+Ao0wQipBAAAAABJRU5ErkJggg==" height="12px" width="20px" title="Italy" alt="Italy Flag Icon" class="flag_icon">Italy <span class="country_hint">(Europe)</span></a> </li>	
-                                </ul>
-                            </div>
-                            <div>
-                                <h2>Continental List</h2>
-                                <ul class="sub-menu">
-                                    <li><a href="http://trip-suggest.com/countries-in-asia/">Asia Countries</a></li>
-                                    <li><a href="http://trip-suggest.com/countries-in-africa/">Africa Countries</a></li>
-                                    <li><a href="http://trip-suggest.com/countries-in-europe/">Europe Countries</a></li>
-                                    <li><a href="http://trip-suggest.com/countries-in-north-america/">North America Countries</a></li>
-                                    <li><a href="http://trip-suggest.com/countries-in-south-america/">South America Countries</a></li>
-                                    <li><a href="http://trip-suggest.com/countries-in-oceania/">Oceania Countries</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <div class="dropdown-item">
+                  <h2>Currently Hot Locations</h2>
+                  <ul class="sub-menu">
+                      <li><a href="http://trip-suggest.com/sri-lanka/western/colombo/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAB3klEQVR4Xn2Sv2pUXRTF197nnHsnM04SLSSgIkH9EiIogogJWNgI8mFl5xPYWFj4BuI72PsEAUsRGwk2igmJEAgTIaAxg/kzN5N77zl7OY5oGscfv2IXe7NWsaW7NbWyP0GR6XR4xg4pwknWG6p9FQcQFAp+IQABMAo9OR3lzdrs/aVblZenvbVHxXqdebtR7W5CXrR0NaTcssqxhjjQExEwifNHdrNqzZhXYe6SqHhHOAxUhb5qpH1Jc1XMDTu+vlrW24L/Yqh1bLGVCvFvc7ncVwAy9BgPv5JlHS/nUj0d07Nde9wrHvR6FfeZurd7YSOEDxkCPf5KRjh4j3IXxRZlzNL7xsRqbgk4nUTBnCAUoxCUJ1L7c5ZvexCtKzb+f33qYdmcMx79qTgCFfkS49hCvHjPLAR3iaFRQvkdIdrvndHBkI5zd8u6ZXTYW9KddxoJbjpJ8s/kSszYbmr2vL133vxctCcTcqf8akXoiktAKZDhMYceExGvlWndj39suAPXX+gnsBW1X7FY1saBhOuVbzNUokYpkxsYkyJhIA02X6pH1vUQ2jcNi01ktI4LL5v+dcMr0mzNBNnZmlreO2mCC6k4O3xPTLL65PRIEABCa6GS/ucAAx1IUsGZ+gfyOfgU/i/MDQAAAABJRU5ErkJggg==" height="12px" width="20px" title="Sri Lanka" alt="Sri Lanka Flag Icon" class="flag_icon">Colombo <span class="country_hint">(Sri Lanka)</span></a></li>
+                      <li><a href="http://trip-suggest.com/india/maharashtra/mumbai/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAA0ElEQVR4XsVSO47CQAydn6LsSptV2JT0W27BIbgBR+A+VJSIggsgQUGPOAIFgoaISBAhCPlNMox3qPFQQMErbMl+z3qyTatekzwLRl6AIFrZepTeIsAD8UcDbwheSmWkriuU0vh0ncdIlbPl5hjtUyAQ+J9/vwFcMQOAIT6X4/l2NFsPpqvJItwdMpSGL8z4dCiURVVk0mGkttgWaZXfVz2Pet9EAgPNhFMHPxyl0fawi0/l7HSRGsD/cjWYjHGiNLb+ADUgYZJYb9nqd97zYf9nXX9CYlAoEgAAAABJRU5ErkJggg==" height="12px" width="20px" title="India" alt="India Flag Icon" class="flag_icon">Mumbai <span class="country_hint">(India)</span></a></li>
+                      <li><a href="http://trip-suggest.com/china/shanghai-shi/shanghai/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAAv0lEQVR4Xt3NsS5DYRzG4ef/tXUaTSUUEZHQRWIwsnApVncgcUEGd2CxWw02+xFNupw04rRpz2cxO539pnd58kZ1YpA0mSU9MuNNZa1udPxdEixokottM1YMe3Y2DDuaVrzkfOj2OO5P3Rw66nupDLr2i3Ys+PiOq5HLvTjb8lnrM52bLqRWnJitPE/y3au3Sk0RDvp213lGR34sPZT5aaLgeqSsvX/ptuCoxgahyQSZ+B3tkWQQILCuRNLSP8Q/UX44f/iboIkAAAAASUVORK5CYII=" height="12px" width="20px" title="China" alt="China Flag Icon" class="flag_icon">Shanghai <span class="country_hint">(China)</span></a></li>
+                      <li><a href="http://trip-suggest.com/tunisia/tunis/tunis/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAABFUlEQVR4Xp2SsSuEYRzHP7/neXXeN1kM6FIXtkspi80kmcg/YLqwK6XMMlFSl0sdiwyETRZhcN1gtJDBcCiKxb137/M86sZzd+/l03f91Gf4SmWQfyBQcSia4SCqzdGEhrJACFUlyST9fYRQAWlT/kHSI97Jld6/8I5uvfyppAYptyNH0Nuj987d/Z092EGUTM7o7DHdASZWLqOmZnkvmd1tlVm22XV7mJP0qBqfIGwnW3tYJyI4eCvx9QmgNS5WTmAvzxhIqfmMzW+ptU21uOIeH2zhmgR1eNTRAS+vZmFOb+TE75IgcMUbs7rExzedsTLg44qFaHpMhoeIIvf0jDH4/M1u/jALVZBaizR+mNfqPgla8wtrhltODuQ8bQAAAABJRU5ErkJggg==" height="12px" width="20px" title="Tunisia" alt="Tunisia Flag Icon" class="flag_icon">Tunis <span class="country_hint">(Tunisia)</span></a></li>
+                      <li><a href="http://trip-suggest.com/spain/andalusia/seville/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAAV0lEQVR4Xp3PsRGEMBQD0f13IiG5DqiBoqiK/iiBxMbW1YBerplVtf3HewXNFp2QERuhiepUkl1Ut1hJFHTESMeDDznEN82eiJv8s4+HiKfFRciIJR//ATuiGEftEzAzAAAAAElFTkSuQmCC" height="12px" width="20px" title="Spain" alt="Spain Flag Icon" class="flag_icon">Seville <span class="country_hint">(Spain)</span></a></li>
+                      <li><a href="http://trip-suggest.com/united-kingdom/england/london/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAACv0lEQVR4Xk1Pe0hTbRw+5z1nV3VpmWWZuaI28xJig/gMJIkZbkiEZELZH94oNWtgl7Gylc4aWVheKFYfn2GRF2xgMs3pMDZszjAsnaOyTe2zMNvWXNvZ2d7O0sKHh/d9fpcHnh9ClBeS5slvnoBE3raOV8aKLV4fXx6aIOmuqvfs3kYI+C2XGtm8ikh+GSuuJFIgPVPWMFNSsnToINTrwEjIVvRKZXjTjTpptkYtO5Ce4HT9JAgSWQUvQS5BTJiRrE7H6772xOzmszvU/XgMyNK4pJvE1ncfvMeP7Pn8Rt1yukl5InpDuNdLrjh9/lhudHPOjieIfq9nFtTcms4pPilrFx9WIKniWp5QkX2mdehhh7u0wNNYDyGcdRIf29V23hZH0nbL8/5P/7XCikLfCw010o7NCvMbePvlqSIF+sM0igaD+SCDtYaJBb7MAw4HDw0hTUaH/DJCwyOqr4ON0SQ7DA0LC7jddscSjgE6DfeRPtSetH05HoRIgBIAIP5AsACUxoKDQABBUaqzLACgCoSiD0IAcPwPsZUlGo4wGStOClSTAoYhDCb1Umt/LcgXg5GibVBv0+l95knS+okwDsPBF75HDxZ2blmI5/q7u+B7MzFsIPr7CMuU1WCa0em/GoxzQwaEmyaLSqlMz72tGbUFICQ7n8LCvLcNKsvjTnt8rCNxm6VHO+8ioX3Bff6sS1LapVL/k38vSnCRmybF3XZnaZHwVFFm5NRrWHTBgdL/XbvvZvv/jWlOER0HdLpON16r0MklomPVSvRZm6jtfnJcYvPmXaqecVzXe5UfgSJ3qwmTUcvdp7CyX2knqHsYNM7yyUwGzTa3WFSh6lSPVMlyUzKz4pQ1yukucW4G4I8NuPNyJmzfCzgHj/bax0amwhmARsOQVWDQcU4oq29wPDP7WuWdgcULtf7ycwLzy1/bOj8NxfxwpgAAAABJRU5ErkJggg==" height="12px" width="20px" title="United Kingdom" alt="United Kingdom Flag Icon" class="flag_icon">London <span class="country_hint">(United Kingdom)</span></a></li>	
+                  </ul>
                 </div>
-            </div>
-        </header>
+                <div class="dropdown-item">
+                  <h2>Popular Countries</h2>
+                  <ul class="sub-menu">
+                      <li><a href="http://trip-suggest.com/argentina/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAArUlEQVR4XqWSMQrCQBBFZ9bNkBAVPIy9N/E0gmcRe7EVWy+gjaWChQHdJDPZjILtrpDk8cv/YT5/8Hi5J0SqCl1ARBExMACrCj91RRUMWYwpJZtS8seArqyIKFjLvQrVNp/MgoeJCDDXGoLrar9d7zYrrp2GEGEDkbbeS/l+Vq5oRCKlwbYQjqfZeL5YqrZZPg0aWgA8XR8U2XlkEwD0Dcd2xsP51v9JDGJ/wQA+iAaC4ZxPJ2MAAAAASUVORK5CYII=" height="12px" width="20px" title="Argentina" alt="Argentina Flag Icon" class="flag_icon">Argentina <span class="country_hint">(South America)</span></a> </li>			<li><a href="http://trip-suggest.com/dominican-republic/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAA1ElEQVR4Xs2Sv2rCQACHf3fp2cs/RAJd4uQLODrqGwRXX0Chi6NDXHwFp5aC4KI4O2UunUun4gvoamk0msv5LzjdbVn8ph/f8cHBHam1p1CI92nQrL0NWgCysCsXH7BdKFAUoFD8lAqp2ovMsrsXAqlEetTE1RdbtbtEeGWeb1LxiO/DcjRxNA5UewKYQfNN+yP6GoIQqJwKQMSwB5VDQuoN2rkezaLV18+GlwzNteX8HSqxpH9b3OLP7/Vk+etaTBNrXx/kH9zMJ382XJs5JnukT3IGUPpz91GMP4kAAAAASUVORK5CYII=" height="12px" width="20px" title="Dominican Republic" alt="Dominican Republic Flag Icon" class="flag_icon">Dominican Republic <span class="country_hint">(North America)</span></a> </li>			<li><a href="http://trip-suggest.com/ecuador/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAABAUlEQVR4Xp2RQUsCQRTH37zZlqTCNkwLD3UIT2JCBnqOztpX6CN57t5JunQM9hgRSR/AYJUw1tpVFsS2mZ0XexKaMVjf6b3/n9//vWGY8Hdh3cJ/PMYyw0tSKUAOiNnglBm/qec78XgrBv2EreAtjkrbScAwJKdPe3GkzmFWwQiYJGJ/4WiR0yO5RcP3bdet+nFp/+DhrLaQwjY8rXXd1VUJ/Ork6fXlaypzl43N3qiJCRnO9oKirn4L2z/K18uBnM8/oTD4OLS5NGyudm50NSF0dqJ20WUk7sOLydSxUBlgr3FsUAGE4lai0obzDZRk/E463VpOupsG0Ur7p56HdesXz+Ja8hfy6PYAAAAASUVORK5CYII=" height="12px" width="20px" title="Ecuador" alt="Ecuador Flag Icon" class="flag_icon">Ecuador <span class="country_hint">(South America)</span></a> </li>			<li><a href="http://trip-suggest.com/spain/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAAV0lEQVR4Xp3PsRGEMBQD0f13IiG5DqiBoqiK/iiBxMbW1YBerplVtf3HewXNFp2QERuhiepUkl1Ut1hJFHTESMeDDznEN82eiJv8s4+HiKfFRciIJR//ATuiGEftEzAzAAAAAElFTkSuQmCC" height="12px" width="20px" title="Spain" alt="Spain Flag Icon" class="flag_icon">Spain <span class="country_hint">(Europe)</span></a> </li>			<li><a href="http://trip-suggest.com/iceland/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAA/ElEQVR4Xs3SIUtDURjH4f85595z2cbG6rQtiUHMgmFBGBicCFbLwrIWBYtZxGLVMBA/gSBjw7axsLQZFIMDMQiGqWd33HvOXpOHWzxLwv7tFx7e8rLidh2/+1TxUW19v3mAx/7tcaN61kn7DH+PY9b+C3sq1Da+wziKDRgApg2psSbJXLiyuWJjHJnlpQJaBma6uJDf2VoNODkwo8O9RIGIm/s7fI14ucIDCXJhD2/DJIYGJiGMxusQqRmYnVwPbEzi6cZasXS6i6fBw2XvpvMuufPyRb1rY6SibMovSQFPPL98nF+1M5K7cDbt2yBC4AsQAPIEz2XkvD7JDxGkV3gp3T1TAAAAAElFTkSuQmCC" height="12px" width="20px" title="Iceland" alt="Iceland Flag Icon" class="flag_icon">Iceland <span class="country_hint">(Europe)</span></a> </li>			<li><a href="http://trip-suggest.com/italy/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAAQ0lEQVR4Xu3LoQ0AIRAF0Q+aTrYGGiAYWqAJPAVsC9AkiEu4YFmJQe3ISZ7xTDia3wiUamTIVsl/b3BiWtz1ECtWvAH9+Ao0wQipBAAAAABJRU5ErkJggg==" height="12px" width="20px" title="Italy" alt="Italy Flag Icon" class="flag_icon">Italy <span class="country_hint">(Europe)</span></a> </li>	
+                  </ul>
+                </div>
+                <div class="dropdown-item">
+                  <h2>Continental List</h2>
+                  <ul class="sub-menu">
+                      <li><a href="http://trip-suggest.com/countries-in-asia/">Asia Countries</a></li>
+                      <li><a href="http://trip-suggest.com/countries-in-africa/">Africa Countries</a></li>
+                      <li><a href="http://trip-suggest.com/countries-in-europe/">Europe Countries</a></li>
+                      <li><a href="http://trip-suggest.com/countries-in-north-america/">North America Countries</a></li>
+                      <li><a href="http://trip-suggest.com/countries-in-south-america/">South America Countries</a></li>
+                      <li><a href="http://trip-suggest.com/countries-in-oceania/">Oceania Countries</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <!-- End navigation -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.js"></script>
         <section class="page-top">
             <div class="banner-container">
                 <h2>You are on the homepage.</h2>

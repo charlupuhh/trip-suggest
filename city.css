@@ -127,7 +127,7 @@ a{
 }
 
 .main-content .info #pics .pic-gallery img{
-    width: 20%;
+    width: 40%;
     padding: 2%;
 }
 
@@ -201,11 +201,44 @@ a{
 }
 
 .main-content .info #videos .video-gallery .video-container{
-    width: 20%;
+    width: 50%;
     padding: 5%;
 }
 
 .main-content .info #videos .video-gallery .video-container h4{
     font-size: 2rem;
     color: #bcb500;
+}
+
+.main-content .info #videos .video-gallery .video-container .video{
+    width: 100%;
+}
+
+@media(max-width: 800px){
+
+    .main-content{
+        flex-direction: column;
+        margin: 1%;
+        width: 90%;
+    }
+
+    .main-content .info #about .city-info{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        padding-top: 10%;
+    }
+
+    .sidebar hr{
+        display: none;
+    }
+
+    .main-content .info #about .city-specs {
+        width: auto;
+    }
+
+    .main-content .info .event-containers .event .event-name{
+        font-size: 1.5rem;    
+    }
 }
