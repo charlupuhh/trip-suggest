@@ -1,0 +1,211 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-family: 'Open Sans';
+}
+
+/* Change all links into this color by default */
+a{
+    color: #bcb500;
+}
+
+.main-content{
+    display: flex;
+    margin: 5% 20%;
+}
+
+/* Sidebar Styling */
+.main-content .sidebar{
+    width: 50%;
+    margin: 2%;
+}
+
+/* About This Place Styling */
+.main-content .sidebar .about-city h2{
+    font-size: 2rem;
+    color: #bcb500;
+}
+
+.main-content .sidebar .about-city nav{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main-content .sidebar .about-city nav a{
+    color: black;
+    border-bottom: solid #bcb500 2px;
+    font-size: 1.3rem;
+    padding: 5% 1% 5% 5%;
+}
+
+.main-content .sidebar .about-city nav a:hover{
+    background-color: rgb(224, 219, 219);
+}
+
+.main-content .sidebar hr{
+    margin: 40% 0;
+}
+/* Other Popular Places Styling */
+
+.main-content .sidebar .recommendations h4{
+    font-size: 2rem;
+    color: #bcb500;
+    margin-bottom: 20px;
+}
+
+.main-content .sidebar .recommendations p {
+    font-size: 1.5rem;
+}
+
+.main-content .sidebar .recommendations ul{
+    list-style: none;
+    line-height: 30px;
+    font-size: 1.3rem;
+}
+
+.main-content .sidebar .recommendations ul li img{
+    margin-right: 10px;
+}
+
+/* Main Content Info Styling */
+.main-content .info h3{
+    color: #bcb500;
+    font-size: 2.4rem;
+    margin: 2% 0;
+}
+
+
+.main-content .info #about h2{
+    font-size: 4rem;
+    color: #bcb500;
+    border-bottom: solid 2px #bcb500;
+    padding: 5%;
+    padding-left: 0;
+}
+
+.main-content .info .overview{
+    font-size: 2rem;
+    padding: 2% 0;
+    line-height: 2.5rem;
+}
+
+.main-content .info #about .city-info{
+    display: flex;
+}
+
+.main-content .info #about .city-specs {
+    width: 70%;
+    font-size: 1.5rem;
+    padding: 2%;
+    line-height: 1.8rem;
+}
+
+/* Picture Styling */
+
+.main-content .info #pics .pic-gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content .info #pics .pic-gallery img{
+    width: 20%;
+    padding: 2%;
+}
+
+/* Tips Styling */
+
+.main-content .info #tips .fact{
+    margin: 2% 0;
+}
+
+.main-content .info #tips .fact h4{
+    font-size: 1.9rem;
+    color: #bcb500;
+}
+
+.main-content .info #tips .fact p{
+    font-size: 1.4rem;
+    margin: 1% 0;
+}
+
+.main-content .info #tips .fact .fact-info{
+    display: flex;
+}
+
+.main-content .info #tips .fact .fact-info div{
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+/* Events Styling */
+.main-content .info .event-containers{
+    display: flex;
+}
+
+.main-content .info .event-containers .date{
+    display: flex;
+    flex-direction: column;
+    border: solid grey 1px;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.main-content .info .event-containers .date .day {
+    font-size: 3rem;
+}
+
+.main-content .info .event-containers .date .month{
+    color: white;
+    background-color: grey;
+}
+
+.main-content .info .event-containers .event{
+    width: 100%;
+}
+
+.main-content .info .event-containers .event .event-name{
+    background-color: #bcb500;
+    width: 100%;
+    font-size: 2.5rem;
+    color: white;
+}
+.main-content .info .event-containers .event .event-description{
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+/* Video Styling */
+
+.main-content .info #videos .video-gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content .info #videos .video-gallery .video-container{
+    width: 20%;
+    padding: 5%;
+}
+
+.main-content .info #videos .video-gallery .video-container h4{
+    font-size: 2rem;
+    color: #bcb500;
+}

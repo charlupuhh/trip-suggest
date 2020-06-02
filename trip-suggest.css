@@ -164,7 +164,7 @@ header .menu .dropdown:hover .dropdown-content ul li a .country_hint{
     width: 2rem;
     height: auto;
 }
-
+/* Country Name Styling */
 .main-content a{
     color: #BCB500;
     font-size: 1.8rem;
@@ -198,8 +198,9 @@ header .menu .dropdown:hover .dropdown-content ul li a .country_hint{
 
 .footer-suggestions h4{
     color: white;
-    font-size: 1.8em;
+    font-size: 3rem;
     font-weight: 200;
+    letter-spacing: 2px;
 }
 
 .footer-suggestions .advert-title-l, .footer-suggestions .quote p{
@@ -209,10 +210,13 @@ header .menu .dropdown:hover .dropdown-content ul li a .country_hint{
 .footer-suggestions .footer-recommendations ul{
     list-style: none;
     margin-left: none;
+    line-height: 2rem;
+    letter-spacing: 1px;
 }
 
 .footer-suggestions .footer-recommendations ul li a{
     color: white;
+    font-size: 1.3rem;
 }
 
 /* Copyright Styling */
@@ -241,8 +245,45 @@ header .menu .dropdown:hover .dropdown-content ul li a .country_hint{
 
 /* Tablet Styling */
 @media(max-width: 800px){
+    header{
+        position: initial;
+    }
+
+    header .header-container{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header .menu .homepage-btn{
+        display: none;
+    }
+    
+    header .menu .dropdown {
+        display: none;
+    }
+
+    .page-top{
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .page-top .banner-container{
+        padding: 2%;
+    }
+
+    .main-content{
+        flex-direction: column;
+        padding: 0;
+    }
+
     .footer-suggestions{
         flex-direction: column;
+        padding: 1%;
+    }
+
+    .copyright{
+        flex-direction: column;
+        padding: 5%;
     }
 }
 
